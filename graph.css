@@ -1,5 +1,21 @@
 node {
-    text-alignment: under;
-    size: 15px;
-    fill-color: blue;
+    text-alignment: above;
+    size: 30px;
+    fill-color: red;
+    text-background-mode: plain;
+    text-padding: 1,1;
+    shape: diamond;
+    text-color: #0f4d13;
+    text-size: 12px;
+}
+
+edge{
+    fill-color: orange;
+    arrow-size: 8px;
+    shape: angle;
+    size:6px;
+    text-color: blue;
+    text-size: 12px;
+    text-background-mode: plain;
+
 }

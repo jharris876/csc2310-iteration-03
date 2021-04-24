@@ -6,8 +6,8 @@ import org.graphstream.graph.Graph;
 public class VizSharkJunior {
 
     private Graph graph;
-    private CSVJunior genJr;
-//    private GeneratorJunior genJr;
+    //private CSVJunior csvJr;
+    private GeneratorJunior genJr;
 
     public VizSharkJunior(String cmd, String arg) {
         // Set the program to run using javafx GUI system
@@ -25,8 +25,8 @@ public class VizSharkJunior {
         // Polymorphic call to instantiate one of the two supported generators
         if (cmd.contentEquals("--csv"))
             this.genJr = new CSVJunior(graph, arg);
-//        else
-//            this.genJr = new TSharkJunior(graph, Integer.parseInt(arg));
+        else
+            this.genJr = new TSharkJunior(graph, Integer.parseInt(arg));
 
         // Begin reading and displaying data on the graph
         this.genJr.begin();
